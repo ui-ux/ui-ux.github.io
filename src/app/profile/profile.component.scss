@@ -1,6 +1,13 @@
+section {
+  margin-left: 130px;
+}
+
+
 ul {
   margin-bottom: 6px;
 }
+
+
 
 .about-me {
   margin: 24px auto;
@@ -224,4 +231,11 @@ ul {
 .details_caption_cv {
   font-size: 12px;
   text-transform: initial;
+}
+
+
+@media (max-width: 576px) {
+  section {
+    margin-left: 50px;
+  }
 }

@@ -1,11 +1,16 @@
 <section>
-  <div [ngClass]="isSearch ? 'static-search' : 'fixed-search'">
+  <div [class.fixed-search]="!isSearch">
     <h1 class="text-uppercase">
       {{ "skills" | translate }}
     </h1>
     <div class="d-flex">
-      <div class="search-skills col-lg-4 col-12">
-        <input type="text" class="w-100" [(ngModel)]="searchskills" />
+      <div class="col-lg-4 col-12">
+        <input
+          aria-label="Search skills"
+          type="text"
+          class="d-block w-100 search rounded"
+          [(ngModel)]="searchskills"
+        />
       </div>
     </div>
   </div>

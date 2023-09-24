@@ -4,28 +4,20 @@ section {
   margin-left: 130px;
 }
 
-
-.search-skills {
-  input {
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+input.search {
+  margin-bottom: 20px;
+  padding: .375rem .75rem;
+  color: $dark-blue;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 1px solid $dark-blue;
+  &:focus {
+    box-shadow: 0 0 0 1px $dark-blue;
   }
+
+
 }
 
-.static-search {
-  position: relative;
-  // transition: all 0.5s;
-}
 
 .fixed-search {
   position: sticky;
@@ -33,12 +25,8 @@ section {
   left: 0;
   right: 0;
   margin: auto;
-  // padding: 10px 40px;
   width: 100%;
-  // max-width: 1166px;
-  // z-index: 99;
-  background: #ffffff;
-  // transition: all 0.5s;
+  background: $white;
   box-shadow: 0 2px 2px -2px  $dark-blue;
 }
 
