@@ -1,0 +1,25 @@
+@import '../variables.scss';
+
+.language{
+  text-align: right;
+
+  button {
+    margin-right: 1rem;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0.5;
+
+    &.active {
+      opacity: 1;
+    }
+
+    &:focus {
+      border: 2px solid $dark-blue;
+    }
+  }
+}

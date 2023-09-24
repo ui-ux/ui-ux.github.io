@@ -1,10 +1,12 @@
 <section>
   <div [ngClass]="isSearch ? 'static-search' : 'fixed-search'">
-    <h1>
-      <!-- {{ "skills" | translate }} -->
+    <h1 class="text-uppercase">
+      {{ "skills" | translate }}
     </h1>
-    <div class="search-skills">
-      <input type="text" [(ngModel)]="searchskills" />
+    <div class="d-flex">
+      <div class="search-skills col-lg-4 col-12">
+        <input type="text" class="w-100" [(ngModel)]="searchskills" />
+      </div>
     </div>
   </div>
   <div [@skills]="skills" class="row">
@@ -13,7 +15,7 @@
         <img src="{{ skill.url }}" alt="{{ skill.name }}" />
       </div>
       <div class="text-center">
-        <!-- {{ skill.name | uppercase }} -->
+        {{ skill.name | uppercase }}
       </div>
     </div>
   </div>

@@ -1,13 +1,13 @@
-h1 {
-  text-transform: uppercase;
-  font-size: 20px;
-  color: tomato;
+@import './../../variables.scss';
+
+section {
+  margin-left: 130px;
 }
+
 
 .search-skills {
   input {
     display: block;
-    max-width: 300px;
     width: 100%;
     margin-bottom: 20px;
     padding: .375rem .75rem;
@@ -24,20 +24,26 @@ h1 {
 
 .static-search {
   position: relative;
-  transition: all 0.5s;
+  // transition: all 0.5s;
 }
 
 .fixed-search {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   margin: auto;
-  padding: 10px 40px;
+  // padding: 10px 40px;
   width: 100%;
-  max-width: 1140px;
-  z-index: 99;
+  // max-width: 1166px;
+  // z-index: 99;
   background: #ffffff;
-  transition: all 0.5s;
-  box-shadow: 0 5px 5px -5px #333;
+  // transition: all 0.5s;
+  box-shadow: 0 2px 2px -2px  $dark-blue;
+}
+
+@media (max-width: 576px) {
+  section {
+    margin-left: 50px;
+  }
 }

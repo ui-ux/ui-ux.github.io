@@ -1,34 +1,39 @@
-<div class="navigation-cv">
-  <ul>
-    <li
-      class="navigation-cv_list"
+<ul class="navigation">
+  <li>
+    <button
+      type="button"
+      class="navigation-list py-2 rounded text-uppercase"
       routerLink="profile"
       routerLinkActive="active"
     >
-      <i class="fa fa-user-circle-o"></i>
-      <span class="nav-about_list-tooltip">
-        {{ "about.aboutMe" | translate }}
-      </span>
-    </li>
-    <li
-      class="navigation-cv_list"
+      <i class="fa fa-user-circle-o d-inline-flex mx-2"></i>
+      <span class="d-none d-sm-inline-block">{{
+        "about.aboutMe" | translate
+      }}</span>
+    </button>
+  </li>
+
+  <li>
+    <button
+      type="button"
+      class="navigation-list py-2 rounded text-uppercase"
       routerLink="skills"
       routerLinkActive="active"
     >
-      <i class="fa fa-cogs"></i>
-      <span class="nav-about_list-tooltip">
-        {{ "skills" | translate }}
-      </span>
-    </li>
-    <li
-      class="navigation-cv_list"
+      <i class="fa fa-cogs d-inline-flex mx-2"></i>
+      <span class="d-none d-sm-inline-block">{{ "skills" | translate }}</span>
+    </button>
+  </li>
+
+  <!-- <li>
+    <button
+      type="button"
+      class="navigation-list py-2 rounded text-uppercase"
       routerLink="useful"
       routerLinkActive="active"
     >
-      <i class="fa fa-map-signs"></i>
-      <span class="nav-about_list-tooltip">
-        {{ "useful" | translate }}
-      </span>
-    </li>
-  </ul>
-</div>
+      <i class="fa fa-map-signs d-inline-flex mx-2"></i>
+      <span class="d-none d-sm-inline-block"> {{ "useful" | translate }}</span>
+    </button>
+  </li> -->
+</ul>
