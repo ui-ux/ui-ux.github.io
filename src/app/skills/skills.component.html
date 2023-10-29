@@ -1,20 +1,18 @@
-<section>
-  <div [class.fixed-search]="!isSearch">
-    <h1 class="text-uppercase">
+<section class="d-flex flex-column h-100">
+  <div class="d-flex py-3">
+    <h1 class="text-uppercase m-0">
       {{ "skills" | translate }}
     </h1>
-    <div class="d-flex">
-      <div class="col-lg-4 col-12">
-        <input
-          aria-label="Search skills"
-          type="text"
-          class="d-block w-100 search rounded"
-          [(ngModel)]="searchskills"
-        />
-      </div>
-    </div>
+    <span class="d-inline-block mx-2">
+      <input
+        aria-label="Search skills"
+        type="text"
+        class="d-block w-100 search rounded"
+        [(ngModel)]="searchskills"
+      />
+    </span>
   </div>
-  <div [@skills]="skills" class="row">
+  <div class="row mx-0 h-100 overflow-auto">
     <div *ngFor="let skill of skills | search : searchskills" class="col-lg-4">
       <div class="text-center">
         <img src="{{ skill.url }}" alt="{{ skill.name }}" />

@@ -1,232 +1,228 @@
-<section>
-  <h1 class="text-uppercase">
-    {{ "about.aboutMe" | translate }}
-  </h1>
-</section>
-
-<!-- <div class="about-me">
-  <div class="about-me_head">
-    <div class="d-flex justify-content-between">
-      <span class="about-me_head-name">
-        {{ "about.aboutMe" | translate }}
-      </span>
-    </div>
-    <button class="generate-resume" (click)="generatePDF()">
+<section class="d-flex flex-column h-100">
+  <div class="d-flex justify-content-between">
+    <h1 class="text-uppercase m-0 py-3">
+      {{ "about.aboutMe" | translate }}
+    </h1>
+    <button class="ml-auto generate-resume" (click)="generatePDF()">
       {{ "about.downloadCv" | translate }}
     </button>
-    <div>
-      <div id="table">
-        <div class="mb-1">
-          {{ "about.userName" | translate }}
-        </div>
-        <div class="details_content">
-          {{ "about.kpmgPeriod" | translate }}
-        </div>
-        <div class="details_content">
-          {{ "about.positionFirst" | translate }},
-          {{ "about.positionSecond" | translate }}
-        </div>
-        <div class="details_caption_cv">
-          {{ "about.projects" | translate }} -
-          {{ "about.projectsNameSecond" | translate }}
-        </div>
-        <div class="details_caption_cv">
-          {{ "about.responsibilities" | translate }}
-        </div>
-        <div class="details_caption_cv">
-          <ul>
-            <li>
-              {{ "about.responsibilities1" | translate }}
-            </li>
-            <li>
-              {{ "about.responsibilities2" | translate }}
-            </li>
-            <li>
-              {{ "about.responsibilities3" | translate }}
-            </li>
-            <li>
-              {{ "about.responsibilities4" | translate }}
-            </li>
-            <li>
-              {{ "about.responsibilities5" | translate }}
-            </li>
-          </ul>
-        </div>
-        <div class="details_caption_cv">
-          {{ "about.deepUse" | translate }}
-        </div>
-        <div class="details_caption_cv">
-          <ul>
-            <li>
-              {{ "about.knowledge1" | translate }}
-            </li>
-            <li>
-              {{ "about.knowledge2" | translate }}
-            </li>
-            <li>
-              {{ "about.knowledge3" | translate }}
-            </li>
-            <li>
-              {{ "about.knowledge4" | translate }}
-            </li>
-            <li>
-              {{ "about.knowledge5" | translate }}
-            </li>
-            <li>
-              {{ "about.knowledge6" | translate }}
-            </li>
-            <li>
-              {{ "about.knowledge7" | translate }}
-            </li>
-          </ul>
-        </div>
-        <div class="details_caption_cv">
-          {{ "about.periodicUse" | translate }}
-        </div>
-        <div class="details_caption_cv">
-          <ul>
-            <li>
-              {{ "about.knowledge8" | translate }}
-            </li>
-            <li>
-              {{ "about.knowledge9" | translate }}
-            </li>
-            <li>
-              {{ "about.knowledge10" | translate }}
-            </li>
-            <li>
-              {{ "about.knowledge11" | translate }}
-            </li>
-            <li>
-              {{ "about.knowledge12" | translate }}
-            </li>
-          </ul>
-        </div>
-        <div class="details_caption_cv">
-          {{ "about.developmentTools" | translate }}
-        </div>
-        <div class="details_caption_cv">
-          <ul>
-            <li>
-              {{ "about.tools1" | translate }}
-            </li>
-            <li>
-              {{ "about.tools2" | translate }}
-            </li>
-            <li>
-              {{ "about.tools3" | translate }}
-            </li>
-            <li>
-              {{ "about.tools4" | translate }}
-            </li>
-            <li>
-              {{ "about.tools5" | translate }}
-            </li>
-          </ul>
-        </div>
-        <div class="details_content">
-          {{ "about.freelancePeriod" | translate }}
-        </div>
-        <div class="details_content">
-          {{ "about.positionFirst" | translate }}
-        </div>
-        <div class="details_caption_cv">
-          {{ "about.projects" | translate }} -
-          {{ "about.projectsNameFirst" | translate }}
-        </div>
-        <div class="details_caption_cv">
-          {{ "about.responsibilities" | translate }}
-        </div>
-        <div class="details_caption_cv">
-          <ul>
-            <li>
-              {{ "about.responsibilities6" | translate }}
-            </li>
-            <li>
-              {{ "about.responsibilities6" | translate }}
-            </li>
-          </ul>
-        </div>
-        <div class="details_caption_cv">
-          {{ "about.deepUse" | translate }}
-        </div>
-        <div class="details_caption_cv">
-          <ul>
-            <li>
-              {{ "about.knowledge1" | translate }}
-            </li>
-            <li>
-              {{ "about.knowledge13" | translate }}
-            </li>
-            <li>
-              {{ "about.knowledge14" | translate }}
-            </li>
-            <li>
-              {{ "about.knowledge15" | translate }}
-            </li>
-            <li>
-              {{ "about.knowledge16" | translate }}
-            </li>
-          </ul>
-        </div>
-        <div class="details_caption_cv">
-          {{ "about.periodicUse" | translate }}
-        </div>
-        <div class="details_caption_cv">
-          <ul>
-            <li>
-              {{ "about.knowledge17" | translate }}
-            </li>
-          </ul>
-        </div>
-        <div class="details_caption_cv">
-          {{ "about.developmentTools" | translate }}
-        </div>
-        <div class="details_caption_cv">
-          <ul>
-            <li>
-              {{ "about.tools6" | translate }},
-              {{ "about.tools2" | translate }},
-              {{ "about.tools3" | translate }}
-            </li>
-          </ul>
-        </div>
-        <div class="contact_list">
-          <span class="fa fa-envelope-o"> </span>
-          <span>
-            {{ "about.envelopeName" | translate }}
-          </span>
-        </div>
-        <div class="contact_list">
-          <span class="fa fa-skype"> </span>
-          <span>
-            {{ "about.skype" | translate }}
-          </span>
-        </div>
-      </div>
-    </div>
-    <div class="d-flex justify-content-between">
-      <div class="time">
-        {{ timeData }}
-      </div>
-      <div class="data">
-        {{ sdata }}
-      </div>
-    </div>
   </div>
+  <div class="h-100 overflow-auto">
+    <div id="content">
+      <div class="font-weight-bold about-me_head-name">
+        {{ "about.userName" | translate }}
+      </div>
+      <div class="about-me_head">
+        <div>
+          <div class="details_content d-flex justify-content-end">
+            <a href="https://www.aptem.co.uk/"> Aptem </a>&nbsp;{{
+              "about.aptemLtd" | translate
+            }}
+          </div>
+          <div class="details_content">
+            {{ "about.positionFirst" | translate }},
+            {{ "about.positionSecond" | translate }}
+          </div>
+          <div class="details_caption_cv">
+            {{ "about.projects" | translate }} -
+            {{ "about.projectsName3" | translate }}
+          </div>
+          <div class="details_caption_cv">
+            {{ "about.responsibilities" | translate }}
+          </div>
+          <div class="details_caption_cv">
+            <ul>
+              <li>
+                {{ "about.responsibilities9" | translate }}
+              </li>
+              <li>{{ "about.responsibilities10" | translate }}</li>
+              <li>{{ "about.responsibilities8" | translate }}</li>
+              <li>{{ "about.responsibilities11" | translate }}</li>
+              <li>{{ "about.responsibilities5" | translate }}</li>
+            </ul>
+          </div>
+          <div class="details_caption_cv">
+            {{ "about.deepUse" | translate }}
+          </div>
+          <div class="details_caption_cv">
+            <ul>
+              <li>
+                {{ "about.knowledge1" | translate }}
+              </li>
+              <li>
+                {{ "about.knowledge2" | translate }}
+              </li>
+              <li>
+                {{ "about.knowledge3" | translate }}
+              </li>
+              <li>
+                {{ "about.knowledge4" | translate }}
+              </li>
+              <li>
+                {{ "about.knowledge6" | translate }}
+              </li>
+              <li>{{ "about.knowledge19" | translate }}</li>
+              <li>{{ "about.knowledge24" | translate }}</li>
+              <li>{{ "about.knowledge26" | translate }}</li>
+            </ul>
+          </div>
+          <div class="details_caption_cv">
+            {{ "about.periodicUse" | translate }}
+          </div>
+          <div class="details_caption_cv">
+            <ul>
+              <li>
+                {{ "about.knowledge25" | translate }}
+              </li>
+              <li>
+                {{ "about.knowledge12" | translate }}
+              </li>
+            </ul>
+          </div>
 
-  <div class="contact">
-    <div class="contact_list">
-      <span class="fa fa-envelope-o"> </span>
-      <span>
-        {{ "about.envelopeName" | translate }}
-      </span>
-    </div>
-    <div class="contact_list">
-      <span class="fa fa-skype"> </span>
-      <span>
-        {{ "about.skype" | translate }}
-      </span>
+          <hr />
+          <div class="details_content d-flex justify-content-end">
+            <a href="https://kpmg.com/ua/uk/home.html"> KPMG </a>&nbsp;
+            {{ "about.kpmgPeriod" | translate }}
+          </div>
+          <div class="details_content">
+            {{ "about.positionFirst" | translate }},
+            {{ "about.positionSecond" | translate }}
+          </div>
+          <div class="details_caption_cv">
+            {{ "about.projects" | translate }} -
+            {{ "about.projectsNameSecond" | translate }}
+          </div>
+          <div class="details_caption_cv">
+            {{ "about.responsibilities" | translate }}
+          </div>
+          <div class="details_caption_cv">
+            <ul>
+              <li>
+                {{ "about.responsibilities1" | translate }}
+              </li>
+              <li>
+                {{ "about.responsibilities2" | translate }}
+              </li>
+              <li>
+                {{ "about.responsibilities3" | translate }}
+              </li>
+              <li>
+                {{ "about.responsibilities4" | translate }}
+              </li>
+              <li>
+                {{ "about.responsibilities5" | translate }}
+              </li>
+            </ul>
+          </div>
+          <div class="details_caption_cv">
+            {{ "about.deepUse" | translate }}
+          </div>
+          <div class="details_caption_cv">
+            <ul>
+              <li>
+                {{ "about.knowledge1" | translate }}
+              </li>
+              <li>
+                {{ "about.knowledge2" | translate }}
+              </li>
+              <li>
+                {{ "about.knowledge3" | translate }}
+              </li>
+              <li>
+                {{ "about.knowledge4" | translate }}
+              </li>
+              <li>
+                {{ "about.knowledge5" | translate }}
+              </li>
+              <li>
+                {{ "about.knowledge6" | translate }}
+              </li>
+              <li>
+                {{ "about.knowledge7" | translate }}
+              </li>
+            </ul>
+          </div>
+          <div class="details_caption_cv">
+            {{ "about.periodicUse" | translate }}
+          </div>
+          <div class="details_caption_cv">
+            <ul>
+              <li>
+                {{ "about.knowledge10" | translate }}
+              </li>
+              <li>
+                {{ "about.knowledge11" | translate }}
+              </li>
+              <li>
+                {{ "about.knowledge12" | translate }}
+              </li>
+            </ul>
+          </div>
+          <hr />
+          <div class="details_content d-flex justify-content-end">
+            {{ "about.freelancePeriod" | translate }}
+          </div>
+          <div class="details_content">
+            {{ "about.positionFirst" | translate }}
+          </div>
+          <div class="details_caption_cv">
+            {{ "about.projects" | translate }} -
+            {{ "about.projectsNameFirst" | translate }}
+          </div>
+          <div class="details_caption_cv">
+            {{ "about.responsibilities" | translate }}
+          </div>
+          <div class="details_caption_cv">
+            <ul>
+              <li>
+                {{ "about.responsibilities6" | translate }}
+              </li>
+              <li>
+                {{ "about.responsibilities6" | translate }}
+              </li>
+            </ul>
+          </div>
+          <div class="details_caption_cv">
+            {{ "about.deepUse" | translate }}
+          </div>
+          <div class="details_caption_cv">
+            <ul>
+              <li>
+                {{ "about.knowledge1" | translate }}
+              </li>
+              <li>
+                {{ "about.knowledge13" | translate }}
+              </li>
+              <li>
+                {{ "about.knowledge14" | translate }}
+              </li>
+              <li>
+                {{ "about.knowledge15" | translate }}
+              </li>
+              <li>
+                {{ "about.knowledge16" | translate }}
+              </li>
+            </ul>
+          </div>
+          <div class="details_caption_cv">
+            {{ "about.periodicUse" | translate }}
+          </div>
+          <div class="details_caption_cv">
+            <ul>
+              <li>
+                {{ "about.knowledge17" | translate }}
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex align-items-end contact_list">
+            <span class="fa fa-envelope-o"> </span>
+            <span>
+              {{ "about.envelopeName" | translate }}
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div> -->
+</section>

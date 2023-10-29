@@ -2,28 +2,17 @@ section {
   margin-left: 130px;
 }
 
-
-ul {
-  margin-bottom: 6px;
-}
-
-
-
-.about-me {
-  margin: 24px auto;
-  width: 100%;
-  max-width: 300px;
-  height: 600px;
-  box-shadow: rgba(0, 0, 0, 0.8) 3px 3px 12px -4px;
-  border-radius: 50px;
-}
-
-.about-me_head {
-  padding: 20px 40px;
+.font-weight-bold {
   font-weight: 500;
 }
 
+#content {
+  padding: 20px 40px;
+}
+
 .about-me_head-name {
+  padding-bottom: 20px;
+  font-size: 20px;
   text-transform: uppercase;
 }
 
@@ -229,7 +218,6 @@ ul {
 }
 
 .details_caption_cv {
-  font-size: 12px;
   text-transform: initial;
 }
 

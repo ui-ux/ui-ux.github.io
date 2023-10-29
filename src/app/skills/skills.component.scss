@@ -5,8 +5,7 @@ section {
 }
 
 input.search {
-  margin-bottom: 20px;
-  padding: .375rem .75rem;
+  padding: 4px;
   color: $dark-blue;
   background-color: transparent;
   background-clip: padding-box;
@@ -14,10 +13,7 @@ input.search {
   &:focus {
     box-shadow: 0 0 0 1px $dark-blue;
   }
-
-
 }
-
 
 .fixed-search {
   position: sticky;

@@ -18,7 +18,7 @@ export class ProfileComponent {
   constructor() {}
 
   generatePDF() {
-    const data = document.getElementById('table');
+    const data = document.getElementById('content');
 
     html2canvas(data!).then(canvas => {
       // Захоплюємо зображення з вмісту HTML-елемента
