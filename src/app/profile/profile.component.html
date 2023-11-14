@@ -1,9 +1,9 @@
 <section class="d-flex flex-column h-100">
-  <div class="d-flex justify-content-between">
-    <h1 class="text-uppercase m-0 py-3">
+  <div class="d-flex justify-content-between py-3">
+    <h1 class="text-uppercase m-0">
       {{ "about.aboutMe" | translate }}
     </h1>
-    <button class="ml-auto generate-resume" (click)="generatePDF()">
+    <button class="ml-auto generate-resume px-2" (click)="generatePDF()">
       {{ "about.downloadCv" | translate }}
     </button>
   </div>
@@ -14,8 +14,10 @@
       </div>
       <div class="about-me_head">
         <div>
-          <div class="details_content d-flex justify-content-end">
-            <a href="https://www.aptem.co.uk/"> Aptem </a>&nbsp;{{
+          <div
+            class="details_content d-flex justify-content-end align-items-center"
+          >
+            <a href="https://www.aptem.co.uk/" clas="px-2"> Aptem </a>&nbsp;{{
               "about.aptemLtd" | translate
             }}
           </div>
@@ -81,7 +83,9 @@
           </div>
 
           <hr />
-          <div class="details_content d-flex justify-content-end">
+          <div
+            class="details_content d-flex justify-content-end align-items-center"
+          >
             <a href="https://kpmg.com/ua/uk/home.html"> KPMG </a>&nbsp;
             {{ "about.kpmgPeriod" | translate }}
           </div>

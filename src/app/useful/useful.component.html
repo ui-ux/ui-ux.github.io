@@ -1,1 +1,36 @@
-<p>useful works!</p>
+<section class="d-flex flex-column h-100">
+  <div class="d-flex py-3">
+    <h1 class="text-uppercase m-0">
+      {{ "useful" | translate }}
+    </h1>
+    <div class="mx-2">
+      <input
+        aria-label="Search Useful"
+        type="text"
+        class="d-block w-100 search rounded"
+        [(ngModel)]="searchskills"
+      />
+    </div>
+  </div>
+  <div class="row mx-0 h-100 overflow-auto">
+    <div *ngFor="let skill of skills | search : searchskills" class="col-lg-4">
+      <div class="bg-container">
+        <div class="mr-4">
+          {{ skill.name }}
+        </div>
+        <div>
+          <a target="_blank" href="{{ skill.link }}">{{ skill.link }}</a>
+        </div>
+        <div>
+          <div class="bg-link">
+            <img
+              src="{{ skill.bg }}"
+              title="{{ skill.name }}"
+              alt="{{ skill.name }}"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

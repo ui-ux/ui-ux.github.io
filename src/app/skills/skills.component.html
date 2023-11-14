@@ -3,14 +3,14 @@
     <h1 class="text-uppercase m-0">
       {{ "skills" | translate }}
     </h1>
-    <span class="d-inline-block mx-2">
+    <div class="mx-2">
       <input
         aria-label="Search skills"
         type="text"
         class="d-block w-100 search rounded"
         [(ngModel)]="searchskills"
       />
-    </span>
+    </div>
   </div>
   <div class="row mx-0 h-100 overflow-auto">
     <div *ngFor="let skill of skills | search : searchskills" class="col-lg-4">
